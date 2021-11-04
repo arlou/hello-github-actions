@@ -1,0 +1,9 @@
+name: A workflow for my trial
+on: push
+
+jobs:
+  build:
+    name: show secrets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
