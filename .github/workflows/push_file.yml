@@ -13,7 +13,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'repos.json'
+        source_file: 'license'
         destination_repo: 'arlou/test'
         destination_folder: 'out'
         user_email: 'arlou.yang@gmail.com'
