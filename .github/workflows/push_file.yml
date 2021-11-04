@@ -1,0 +1,26 @@
+name: Push File
+
+on: push
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        github_server: 'github.com'
+        source_file: 'LICENSE'
+        destination_repo: 'arlou/test'
+        destination_folder: 'out'
+        user_email: 'arlou@gmail.com'
+        user_name: 'arlou'
+        commit_message: 'A custom message for the commit'
+
+
+
