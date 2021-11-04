@@ -14,7 +14,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_file: 'LICENSE'
-        destination_repo: 'https://github.com/arlou/test'
+        destination_repo: 'github.com/arlou/test'
         destination_folder: 'out'
         user_email: 'arlou.yang@gmail.com'
         user_name: 'arlou'
